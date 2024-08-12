@@ -1,0 +1,635 @@
+/* styles for  */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #fff;
+    padding: 10px 20px;
+  
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: green;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-left: 225px;
+}
+
+.contact-item img {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.contact-item span {
+    font-size: 14px;
+    color: white;
+}
+
+
+
+
+
+/* styles for auto updated date and time
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.datetime-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.date, .time {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.time {
+    font-size: 32px;
+    font-weight: bold;
+    color: #007BFF;
+}
+*/
+
+
+
+
+
+
+
+
+/* styles for  */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+
+/* styles for nav bar */
+
+
+/* Container for the entire navigation bar */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: darkgreen;
+    padding: 10px 0;
+}
+
+/* Link styles within the navigation */
+.nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: block; /* Ensure the entire padding area is clickable */
+}
+
+/* Container for navigation items */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Unordered list for navigation items */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Individual navigation items */
+.nav-item {
+    margin: 0 15px;
+}
+
+/* Styling for the links */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 14px 20px;
+    display: block; /* Ensure the entire area is clickable */
+}
+
+/* Hover effect for links with block background */
+.nav-link:hover {
+    background-color: #333; /* Darker background on hover */
+    color: white; /* Text color remains white on hover */
+}
+
+/* Dropdown menu container */
+.nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hidden dropdown content */
+.nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: orange;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Dropdown items styling */
+.nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Show dropdown on hover */
+.nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+/* Basic styling for the navigation bar */
+.nav {
+    display: flex;
+    background-color: green;
+    padding: 10px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.nav a:hover {
+    background-color: orange;
+    color: green;
+}
+
+/* Styling for dropdowns */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown content when hovering over the dropdown parent */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Adjust dropdown position and behavior */
+.dropdown-content {
+    top: 100%; /* Positions the dropdown directly below the parent */
+    left: 0;
+}
+
+/* Additional hover effect for dropdown links */
+.dropdown-content a {
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+
+
+/* Styles for the moving images */
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Styles for the moving images */
+
+.moving-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 10px;
+    animation: move 10s infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}
+
+/* Styles for about the college */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: white; /* Updated background color */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading {
+    font-size: 36px;
+    color: orange; /* Updated color to match the image */
+    font-weight: bold;
+    margin-right: 20px; /* Adds space between heading and content */
+}
+
+.content {
+    font-size: 16px;
+    color: #333; /* Updated color for readability */
+    line-height: 1.6;
+    max-width: 60%; /* Limit the content width */
+    text-align: left;
+}
+
+/* Styles for more links about the college */
+.more-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 2px solid #333;
+    transition: all 0.3s ease;
+}
+
+.more-link:hover {
+    color: #4a3fef; /* Updated hover color to match the image */
+    border-bottom-color: #4a3fef; /* Updated border hover color */
+}
+
+
+
+/* Mandate stylings (NOT FUNCTIONAL)*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+
+/* Mandate block styling and hover effect */
+
+/* Container for the three blocks */
+.three-block-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+/* Individual block styling */
+.block {
+    background-color: white; /* Default background color */
+    width: 30%; /* Adjust width for three blocks */
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    position: relative;
+}
+
+.block h3 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.block p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hover effects for the blocks */
+.block:hover {
+    background-color: green; /* Background color on hover for the second block */
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.block:hover h3, .block:hover p {
+    color: white; /* Text color change on hover */
+}
+
+/* Specific background color for the second block */
+.block.second {
+    background-color: white; /* Specific color for the second block */
+    color: white;
+}
+
+.block.second:hover {
+    background-color: peru; /* Darker shade on hover for the second block */
+}
+
+.block.second h3, .block.second p {
+    color: black;
+}
+
+/* Icon styling */
+.block-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.block-icon-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.block-icon-wrapper .block-icon {
+    margin-right: 10px;
+}
+
+.block.second .block-icon {
+    color: white; /* Icon color for the second block */
+}
+
+.block:hover .block-icon {
+    color: white; /* Icon color on hover */
+}
+
+/* Ensuring the hover effect changes color for content */
+.block.second:hover .block-icon {
+    color: white;
+}
+
+
+
+
+
+
+/* How To Apply section stylings */
+
+.apply-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: darkgreen;
+    color: white;
+}
+
+.apply-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.apply-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0 0 0;
+}
+
+.apply-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.apply-button {
+    background-color: orange;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: brown;
+}
+
+
+/* NOT FUNCTIONAL */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Quick links styling */
+
+.footer-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: white;
+    color: #333;
+}
+
+.footer-column {
+    width: 20%;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: orange;      /* Adjust color for headings */
+}
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: orange; /* Adjust hover color */
+}
+
+
+/* footer Copyright */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: orange;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* copyright stylings */
+
+.footer a {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* copyright stylings */
+
+.footer a:hover {
+    color: brown;
+}
+
+
+/* footer social media */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* copyright stylings */
+
+.footer {
+    background-color: green;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icon {
+    color: #333;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: white;
+}
